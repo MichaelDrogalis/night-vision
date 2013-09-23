@@ -7,7 +7,7 @@ Peer through the darkness of running code.
 In your Leiningen profile:
 
 ```clojure
-{:user                                                                                                                                                                                                              
+{:user
  {:dependencies [[night-vision "0.1.0-SNAPSHOT"]]
   :injections [(require 'night-vision.goggles)
                (require 'clojure.pprint)]}}
