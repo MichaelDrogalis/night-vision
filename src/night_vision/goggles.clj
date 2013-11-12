@@ -23,6 +23,8 @@
         fns (filter #(contains? (meta %) :arglists) all-vars)
         divider "------------------------------------------------"]
     (doseq [f fns]
+      (d/remove-pre-hook! pre-log)
+      (d/remove-post-hook! post-log)
       (pre-log f divider)
       (post-log f divider))))
 
